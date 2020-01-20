@@ -407,5 +407,20 @@ button:hover {
 @media (max-width: 500px) {
     nav {
         flex-direction: column;
+        position: relative;
+    }
+    nav a {
+        border-bottom: 1px grey solid;
+        padding: 1% 0 4%;
+    }
+    .logo {
+        order: -9;
+    }
+    .sitaside,
+    .column {
+        flex-direction: column;
+    }
+    .feats {
+        border: 1px white solid;
     }
 }
