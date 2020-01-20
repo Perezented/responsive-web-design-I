@@ -403,18 +403,14 @@ button:hover {
         padding: 0%;
     }
     .logobox {
-        border: 1px green solid;
-        order: -6;
         position: absolute;
         margin-top: -1%;
     }
     nav {
-        border: 1px red solid;
         width: 80%;
     }
     nav a {
         width: 22%;
-        border: 1px solid blue;
         padding: 1% 0 2%;
         margin-top: 10%;
     }
