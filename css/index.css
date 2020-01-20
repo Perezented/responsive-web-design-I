@@ -246,7 +246,7 @@ figure {
 
 .overline {
     border-top: 1px solid black;
-    margin: 0 5%;
+    margin: 0 3%;
 }
 
 /* fix the footer so it is spaced correctly and copyright is centered and has padding/ margins */
@@ -380,5 +380,32 @@ button:hover {
     color: white;
     cursor: pointer;
 }
+.foot {
+    padding-left: 2%;
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 800px) {
+    .circle {
+        display: none;
+    }
+    .middle-img {
+        width: 95%;
+    }
+    .footer {
+        padding: 0 1%;
+    }
+    .vices,
+    .feats {
+        padding: 2%;
+    }
+    .column {
+        padding: 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+}
