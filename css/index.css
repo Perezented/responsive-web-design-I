@@ -1,3 +1,384 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------! */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Added margin and padding to everything, saw Brit do it on lecture */
+
+/* I want to get the nav and the great idea logo to sort right and turn it grey, possibly add some padding too. */
+body {
+    padding-top: 2%;
+}
+body nav {
+    margin-bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    margin-top: 2%;
+}
+nav a {
+    margin: 3% 0 1%;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* I want to make the h1 bigger, looks like I will need to get a section for h1 and the circle photo.*/
+/* a button will need to be added too for get started and place it below h1 */
+/* ---adding glex to both the button, h1 and then to those and the picture on .underline */
+.headin {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+h1 {
+    font-size: 400%;
+}
+button {
+    border-radius: 2px;
+    padding: 3% 2%;
+    margin: 10% 0 0 25%;
+    width: 50%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Make the headings bigger*/
+
+h2 {
+    font-size: 125%;
+}
+h5 {
+    padding: 3% 0 1%;
+    font-size: 125%;
+}
+
+/* having to change this to flex--------------- Going to add inline block to all divs */
+.feats {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border-top: 1px solid black;
+}
+
+.vices {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+/* Change to flex-----------------------make sure that lower image fits the whole section of the screen and make it centered */
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-img {
+    width: 87%;
+}
+
+/* add the lines to the begining of the paragraphs and before the footer */
+
+.underline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0 3%;
+}
+
+.overline {
+    border-top: 1px solid black;
+    margin: 0 5%;
+}
+
+/* fix the footer so it is spaced correctly and copyright is centered and has padding/ margins */
+
+h6 {
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 0 8%;
+}
+
+/* going to add a hover feature to the button. Its not lively when i hover over it. my brain thought something was wrong with the button. its there, just not alive yet. */
+
+/* extra stuff */
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+
+/* needing to control the max size of the cirlce image. */
+.underline img {
+    padding: 6%;
+}
+
+/* need to make the features and about sit side by side */
+.sitaside {
+    display: flex;
+    padding: 2%;
+}
+/* and then make the other section below that have 3 columns */
+.column {
+    display: flex;
+    padding: 1%;
+}
+
+/* Services----------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* needing to space the navigation bar */
+/* want to get the banner picture across the screen next. */
+.topbanner {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.services-header-img {
+    width: 92%;
+}
+.serve {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+/* making the list for the header */
+ul {
+    list-style-type: disc;
+    padding: 4%;
+}
+
+/* attempt to get the photo on one side and the facts about our service on the left */
+.productfoot {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+.productbox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 4% 0 0 0;
+}
+
+/* need to make the image for the footer part be a little bigger possibly 
+nope. didnt work.*/
+
+/* fix button size */
+.boxes button {
+    border: 1px solid black;
+    background-color: white;
+    padding: 1% 0;
+    width: 30%;
+    border-radius: 6%;
+    margin-top: 7%;
+}
+
+/* making the titles a little bigger */
+h3 {
+    font-size: 125%;
+}
+
+/* need to get the 6 boxes in */
+.boxes {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 5% 4% 2%;
+    margin: 2% 0;
+}
+
+/* get all the boxes lined up in a row fingers crossed haha */
+.bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1% 3% 0;
+    padding: 2% 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* going back up into the code to make the boxes have padding and margins */
+
+/* adding padding to page on left and right to make the lines */
+
+/* need to space footer now */
+footer {
+    margin-top: 3%;
+}
+.services-info-img {
+    padding: 1% 0 1% 1%;
+}
+
+/* moved the button hover to the bottom of css. the buttons were not highlighting black when i hover over them on the second page, products */
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
