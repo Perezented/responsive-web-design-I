@@ -402,6 +402,22 @@ button:hover {
     .column {
         padding: 0%;
     }
+    .logobox {
+        border: 1px green solid;
+        order: -6;
+        position: absolute;
+        margin-top: -1%;
+    }
+    nav {
+        border: 1px red solid;
+        width: 80%;
+    }
+    nav a {
+        width: 22%;
+        border: 1px solid blue;
+        padding: 1% 0 2%;
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -413,8 +429,10 @@ button:hover {
         border-bottom: 1px grey solid;
         padding: 3% 0 3%;
         margin: 0;
+        width: 100%;
     }
     .logobox {
+        position: relative;
         order: -9;
     }
     .sitaside,
