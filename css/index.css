@@ -411,16 +411,23 @@ button:hover {
     }
     nav a {
         border-bottom: 1px grey solid;
-        padding: 1% 0 4%;
+        padding: 3% 0 3%;
+        margin: 0;
     }
-    .logo {
+    .logobox {
         order: -9;
     }
     .sitaside,
     .column {
         flex-direction: column;
     }
-    .feats {
+    .feats,
+    .vices {
         border: 1px white solid;
+        padding: 10% 2%;
+    }
+    .underline {
+        border-bottom: 2px solid black;
+        margin: 0 5px;
     }
 }
