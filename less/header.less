@@ -1,0 +1,42 @@
+nav {
+    .grid();
+    grid-template-columns: 5fr 1fr;
+    padding: 1.5%;
+    .logo {
+        padding: 10% 0 0;
+        margin-left: 15%;
+    }
+    .navSeparation {
+        .grid();
+        grid-template-columns: repeat(6, minmax(10%, 1fr));
+        a {
+            width: 30%;
+            margin-left: 30%;
+            color: grey;
+            text-decoration: none;
+            &:hover {
+                text-shadow: black 0 0 10px;
+            }
+        }
+    }
+    @media @phone {
+        .nothing();
+        display: flex;
+        flex-direction: column-reverse;
+        .logo {
+            margin: 25%;
+        }
+        .navSeparation {
+            flex-direction: column;
+            display: flex;
+            a {
+                margin: 1% 5%;
+                width: 90%;
+                text-align: center;
+                padding: 4% 0;
+                .bCheck(grey);
+                border-radius: 6px;
+            }
+        }
+    }
+}

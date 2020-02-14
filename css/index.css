@@ -1,0 +1,723 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Prompt'), local('Prompt-Regular'), url(https://fonts.gstatic.com/s/prompt/v4/-W__XJnvUD7dzB2KYNoY.ttf) format('truetype');
+}
+@media (max-width: 500px) {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h5,
+h4 {
+  font-family: "Bangers", cursive;
+}
+p {
+  line-height: 1.5rem;
+  font-family: "Prompt", sans-serif;
+}
+.padding {
+  padding: 2% 0;
+}
+.nothing {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding: 1.5%;
+}
+nav .logo {
+  padding: 10% 0 0;
+  margin-left: 15%;
+}
+nav .navSeparation {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(10%, 1fr));
+}
+nav .navSeparation a {
+  width: 30%;
+  margin-left: 30%;
+  color: grey;
+  text-decoration: none;
+}
+nav .navSeparation a:hover {
+  text-shadow: black 0 0 10px;
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  nav .logo {
+    margin: 25%;
+  }
+  nav .navSeparation {
+    flex-direction: column;
+    display: flex;
+  }
+  nav .navSeparation a {
+    margin: 1% 5%;
+    width: 90%;
+    text-align: center;
+    padding: 4% 0;
+    border: 1px solid grey;
+    border-radius: 6px;
+  }
+}
+.heading {
+  display: grid;
+  width: 90%;
+  margin: 0 5%;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 5% 3%;
+}
+.heading .heading1 {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.heading .heading1 h1 {
+  font-size: 5.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .heading .heading1 h1 {
+    font-size: 3rem;
+  }
+}
+.heading .heading1 button {
+  justify-self: center;
+  width: 54%;
+  background: white;
+  border: black 1px solid;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+.heading .heading1 button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  transform: scaleX(1.2);
+  transition: 0.2s ease-in-out;
+}
+.heading .heading1 button:hover p {
+  transform: scaleX(0.8);
+}
+.heading .circle {
+  background-image: url(../img/header-img.png);
+  background-repeat: no-repeat;
+  background-size: fit-content;
+  background-position: center;
+}
+@media (max-width: 800px) {
+  .heading .heading {
+    display: flex;
+  }
+  .heading .heading1 {
+    width: 100%;
+  }
+  .heading .circle {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    display: flex;
+  }
+  .heading .circle {
+    display: none;
+  }
+  .heading .heading1 {
+    width: 100%;
+  }
+}
+.top-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7%;
+  border-top: 2px solid gray;
+  width: 90%;
+  margin: 0 5%;
+}
+.top-section div h2 {
+  padding-top: 3%;
+}
+.top-section div p {
+  padding: 3% 0 3%;
+  margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-section div {
+    width: 100%;
+  }
+}
+.banner {
+  width: 90%;
+  margin: 0 5%;
+}
+.banner img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+.triSection {
+  display: grid;
+  width: 90%;
+  margin: 0 5%;
+  margin-top: 2%;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  padding-bottom: 3%;
+  border-bottom: 2px solid gray;
+}
+@media (max-width: 500px) {
+  .triSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .triSection div {
+    width: 100%;
+  }
+}
+.contact {
+  width: 90%;
+  margin: 0 5%;
+  margin-top: 3%;
+}
+h6 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  padding: 2% 0 3%;
+  font-size: 0.8rem;
+}
+.page {
+  width: 90%;
+  margin: 0 5%;
+}
+.page p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.page .banner {
+  margin: 0;
+}
+.page .banner img {
+  width: 110%;
+}
+.page .services {
+  padding: 2% 0;
+}
+.page .services h2 {
+  font-size: 2rem;
+}
+.page .tiles {
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.page .tiles div {
+  background: rgba(211, 211, 211, 0.246);
+  margin: 2% 0;
+  width: 45.5%;
+  padding: 0.5% 1%;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.page .tiles div h3 {
+  font-size: 1.8rem;
+}
+.page .tiles div p {
+  font-size: 1.2rem;
+}
+.page .tiles div button {
+  padding: 1.5% 6%;
+  margin: 2% 0 3% 2%;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: white;
+  transition: 0.2s ease-in-out;
+}
+.page .tiles div button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  transform: scaleX(1.2);
+  transition: 0.2s ease-in-out;
+}
+.page .tiles div button:hover p {
+  transform: scaleX(0.8);
+}
+.page .bottom {
+  padding: 2% 0;
+  display: flex;
+}
+.page .bottom .left {
+  width: 50%;
+}
+.page .bottom .left h4 {
+  font-size: 1.4rem;
+}
+.page .bottom .left p {
+  line-height: 2rem;
+}
+.page .bottom .left ul {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+}
+.page .bottom .right {
+  width: 50%;
+}
+.page .bottom .right img {
+  padding: 5%;
+  width: 90%;
+}
+.flexed {
+  width: 90%;
+  margin: 0 5%;
+}
+.flexed .flexedHeading {
+  display: flex;
+}
+.flexed .flexedHeading .heading1,
+.flexed .flexedHeading .circle {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+}
+.flexed .flexedHeading .heading1 h1,
+.flexed .flexedHeading .circle h1 {
+  font-size: 5.5rem;
+}
+.flexed .flexedHeading button {
+  width: 35%;
+  background: white;
+  border: black 1px solid;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 7%;
+}
+.flexed .flexedHeading button:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  transform: scaleX(1.2);
+  transition: 0.2s ease-in-out;
+}
+.flexed .flexedHeading button:hover p {
+  transform: scaleX(0.8);
+}
+@media (max-width: 500px) {
+  .flexed .flexedHeading button {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+  }
+  .flexed .flexedHeading .heading1 {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    color: white;
+    text-shadow: black 0 0 10px, white 0 0 9px, black 0 0 8px,
+                    white 0 0 7px, black 0 0 6px, black 0 0 5px, black 0 0 2px;
+    z-index: 99;
+  }
+  .flexed .flexedHeading .heading1 h1 {
+    font-size: 2.5rem;
+    justify-self: center;
+    align-self: center;
+  }
+  .flexed .flexedHeading .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .flexed .flexedHeading .circle img {
+    width: 90%;
+  }
+}
+.flexed .flexedTopSection {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid gray;
+}
+.flexed .flexedTopSection div {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .flexed .flexedTopSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexed .flexedTopSection div {
+    width: 100%;
+  }
+}
+.flexed .banner {
+  margin: 0;
+  padding: 2% 0;
+}
+.flexed .banner img {
+  width: 110%;
+}
+.flexed .flexedTriSection {
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+}
+.flexed .flexedTriSection div {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .flexed .flexedTriSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexed .flexedTriSection div {
+    width: 100%;
+  }
+}
+.flexed .contact {
+  margin: 0;
+}

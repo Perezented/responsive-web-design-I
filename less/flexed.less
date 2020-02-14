@@ -1,0 +1,93 @@
+.flexed {
+    .container();
+    .flexedHeading {
+        display: flex;
+        .heading1,
+        .circle {
+            width: 50%;
+            text-align: center;
+            align-self: center;
+            h1 {
+                font-size: 5.5rem;
+            }
+        }
+        button {
+            width: 35%;
+            background: white;
+            border: black 1px solid;
+            border-radius: 6px;
+            .ani1();
+            margin-bottom: 7%;
+        }
+        @media @phone {
+            button {
+                align-self: center;
+                justify-self: center;
+                .nothing();
+            }
+
+            .heading1 {
+                .nothing();
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                position: absolute;
+                color: white;
+                text-shadow: black 0 0 10px, white 0 0 9px, black 0 0 8px,
+                    white 0 0 7px, black 0 0 6px, black 0 0 5px, black 0 0 2px;
+                z-index: 99;
+                h1 {
+                    font-size: 2.5rem;
+                    justify-self: center;
+                    align-self: center;
+                }
+            }
+
+            .circle {
+                img {
+                    width: 90%;
+                }
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .nothing();
+            }
+        }
+    }
+
+    .flexedTopSection {
+        .padding();
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: 45%;
+        }
+        border-top: 2px solid gray;
+        .divOnPhones();
+    }
+
+    .banner {
+        margin: 0;
+        .padding();
+        img {
+            width: 110%;
+        }
+    }
+
+    .flexedTriSection {
+        .padding();
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: 30%;
+        }
+        border-bottom: 2px solid gray;
+        .divOnPhones();
+    }
+
+    .contact {
+        margin: 0;
+    }
+}

@@ -1,0 +1,107 @@
+.heading {
+    .grid();
+    .container;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5% 3%;
+
+    .heading1 {
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        h1 {
+            font-size: 5.5rem;
+            text-align: center;
+            @media @phone {
+                font-size: 3rem;
+            }
+        }
+        button {
+            justify-self: center;
+            width: 54%;
+            background: white;
+            border: black 1px solid;
+            border-radius: 6px;
+
+            .ani1();
+        }
+    }
+
+    .circle {
+        background-image: url(../img/header-img.png);
+        background-repeat: no-repeat;
+        background-size: fit-content;
+        background-position: center;
+    }
+    @media @tablet {
+        .heading {
+            display: flex;
+        }
+        .heading1 {
+            width: 100%;
+        }
+        .circle {
+            display: none;
+        }
+    }
+    @media @phone {
+        display: flex;
+        .circle {
+            display: none;
+        }
+        .heading1 {
+            width: 100%;
+        }
+    }
+}
+
+.top-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7%;
+    border-top: 2px solid gray;
+    .container();
+    div {
+        h2 {
+            padding-top: 3%;
+        }
+        p {
+            padding: 3% 0 3%;
+            margin-bottom: 10%;
+        }
+    }
+    .divOnPhones();
+}
+
+.banner {
+    .container();
+    img {
+        width: 100%;
+    }
+    @media @phone {
+        .nothing();
+        width: 100%;
+    }
+}
+
+.triSection {
+    .grid();
+    .container();
+    margin-top: 2%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    padding-bottom: 3%;
+    border-bottom: 2px solid gray;
+    .divOnPhones();
+}
+
+.contact {
+    .container();
+    margin-top: 3%;
+}
+
+h6 {
+    text-align: center;
+    font-family: @font;
+    padding: 2% 0 3%;
+    font-size: 0.8rem;
+}
