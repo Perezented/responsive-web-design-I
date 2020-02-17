@@ -369,6 +369,10 @@ nav .navSeparation a:hover {
   nav .navOtherPart {
     width: 100%;
     text-align: center;
+    padding: 2% 0 4%;
+  }
+  nav .logo {
+    margin-left: -1%;
   }
 }
 @media (max-width: 500px) {
