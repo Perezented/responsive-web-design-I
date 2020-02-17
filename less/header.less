@@ -19,13 +19,19 @@ nav {
             }
         }
     }
-    @media @phone {
-        .nothing();
+    @media @tablet {
         display: flex;
         flex-direction: column-reverse;
-        .logo {
-            margin: 25%;
+        .navOtherPart {
+            width: 100%;
+            text-align: center;
         }
+        .logo {
+        }
+    }
+    @media @phone {
+        .nothing();
+
         .navSeparation {
             flex-direction: column;
             display: flex;
