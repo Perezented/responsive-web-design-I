@@ -519,6 +519,14 @@ h6 {
   padding: 2% 0 3%;
   font-size: 0.8rem;
 }
+@media (max-width: 800px) {
+  .circle {
+    display: none;
+  }
+  .heading {
+    display: block;
+  }
+}
 .page {
   width: 90%;
   margin: 0 5%;
@@ -720,4 +728,12 @@ h6 {
 }
 .flexed .contact {
   margin: 0;
+}
+@media (max-width: 800px) {
+  .circle {
+    display: none;
+  }
+  .flexedHeading {
+    justify-content: center;
+  }
 }
